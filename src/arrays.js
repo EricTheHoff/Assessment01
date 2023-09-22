@@ -17,7 +17,18 @@ function greaterThanTen(numbers) {
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
-function bWords(words) {}
+function bWords(words) {
+  let bWords = []
+
+  for(const onlyB of words){
+    if(onlyB.startsWith(`b`)){
+      bWords.push(onlyB)
+    } else if(onlyB.startsWith(`B`)){
+      bWords.push(onlyB)
+    }
+  }
+  return bWords
+}
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
