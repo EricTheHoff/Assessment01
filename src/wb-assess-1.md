@@ -272,7 +272,8 @@ array.includes(`Boolean?`) //false
 **_Array_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+An array is a data type that houses multiple data elements. Arrays can contain strings, numbers, a combination of both, or even more arrays. Arrays track the index positioning of their elements, starting at [0]. Arrays will always be wrapped in brackets.
+(e.g. const array = [`A`,`B`,`C`,`D`])
 ```
 
 ### B.3. Trace the value of `x`
@@ -295,7 +296,7 @@ completed for you.
 
 ```
 Initial values: y = 0, x = 5
-1:              y = 1, x = ??
-2:              y = 2, x = ??
-3:              y = 3, x = ??
+1:              y = 1, x = 10
+2:              y = 2, x = 15
+3:              y = 3, x = 20
 ```
