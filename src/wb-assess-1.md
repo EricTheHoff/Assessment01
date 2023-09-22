@@ -64,7 +64,7 @@ if (word) {
 ```
 
 - [ ] **A.** `yay!`
-- [ ] **B.** `no :(`
+- [X] **B.** `no :(`
 - [ ] **C.** An empty line
 - [ ] **D.** N/A because the code has an error
 
@@ -88,7 +88,7 @@ cherry
 ```
 
 - [ ] **A.** `const fruit in fruits`
-- [ ] **B.** `const fruit of fruits`
+- [X] **B.** `const fruit of fruits`
 - [ ] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
 - [ ] **D.** None of the above
 
@@ -104,7 +104,7 @@ function makeWordArray(phrase) {
 ```
 
 - [ ] **A.** Nothing happens because the program errors out.
-- [ ] **B.** It defines a function called `makeWordArray` and converts `phrase` into an array of words.
+- [X] **B.** It defines a function called `makeWordArray` and converts `phrase` into an array of words.
 - [ ] **C.** It defines a function called `makeWordArray` and outputs a word array.
 - [ ] **D.** It defines a function called `makeWordArray` but nothing else happens.
 
@@ -118,7 +118,7 @@ console.log'hi';
 // hi
 ```
 
-- [ ] **A.** The code causes an error because there should be parentheses around `'hi'`.
+- [X] **A.** The code causes an error because there should be parentheses around `'hi'`.
 - [ ] **B.** The code causes an error because `console.log` isn't a function.
 - [ ] **C.** The code causes an error because the code will run but it won't output anything.
 - [ ] **D.** There is no error; the code generates the expected output.
@@ -134,7 +134,7 @@ console.log(fruits[fruits.indexOf('apple')]);
 // apple
 ```
 
-- [ ] **A.** The code causes an error because `fruits[fruits.indexOf('apple')]` isn't valid
+- [X] **A.** The code causes an error because `fruits[fruits.indexOf('apple')]` isn't valid
   JavaScript syntax.
 - [ ] **B.** The code causes an error because `fruits.indexOf('apple')` doesn't return a valid
   index number.
@@ -157,7 +157,7 @@ for (const w of words) {
 ```
 
 - [ ] **A.** The code causes an error because `w` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
+- [X] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
   valid array function.
 - [ ] **C.** The code causes an error because it will output `['JS', 'HTML', 'CSS']` three times.
 - [ ] **D.** There is no error; the code generates the expected output.
@@ -178,7 +178,7 @@ console.log(numStrings);
 ```
 
 - [ ] **A.** The code causes an error because `numStrings` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
+- [X] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
 - [ ] **C.** The code causes an error because `i++` isn't valid JavaScript syntax.
 - [ ] **D.** There is no error; the code generates the expected output.
 
@@ -210,7 +210,7 @@ outputArgs('hi', 'bye');
   of the expected output.
 - [ ] **C.** The code causes an error because the `a`, `b`, and `c` variables haven't been
   initialized.
-- [ ] **D.** There is no error; the code generates the expected output.
+- [X] **D.** There is no error; the code generates the expected output.
 
 ## B. Free response
 
@@ -219,19 +219,28 @@ outputArgs('hi', 'bye');
 **_What is the purpose of functions?_**
 
 ```
-Functions can be used to create named blocks of code that can be executed/reused later. They help you keep code DRY and maintainable.
+Functions are named blocks of code that house even more code within them. When the function is invoked, it executes it's code to perform the needed action. Functions help to keep code organized and effecient so you don't need to write the same code over and over again. It is best to keep their uses as specific as possible.
 ```
 
 **_What is the difference between `console.log` and `return`?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+`console.log()` outupts data to the developer console. This is useful for debugging as it can tell you where code is failing, depending on the placement. `console.log()` will not output anything to the end-user; only to the console.
+
+`return` is used to provide the results of a function. It also serves to end the function. Functions often contain neutral variables with no data; the variables receive data after the function executes, but only if the function has `return` to provide the results.
 ```
 
 **_What's the difference between defining and calling a function?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Defining a function is done when the function is initially created. This is what tells the JavaScript file what it is and what it's supposed to do.
+(e.g.: function myFunction(A, B) -- with this line, I've defined an empty function called myFunction, along with two parameters; A and B.)
+
+Calling (aka invoking) is when the function is called to perform it's actions. This includes passing arguments to its parameters (if any are needed). With the example above, I could invoke myFunction with the following:
+
+console.log(myFunction(`Yes`,`No`))
+
+With the above line, I am invoking my function and will have it output it's return to my console log. I have provided the arguments `Yes` and `No`.
 ```
 
 ### B.2. Describe these data types.
@@ -241,19 +250,23 @@ Write a short description of the following data types:
 **_String_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Any data contained within string identifiers (``,"", and '').
+
+`This whole sentence would be considered a string (even though it has various symbols and numbers like 4 and 7!)`
 ```
 
 **_Number_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Numbers refer to integers and floats within JavaScript. Integers are whole numbers, whereas floats refer to non-whole numbers (like decimals).
 ```
 
 **_Boolean_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Booleans refer to data with only two possible outcomes: true or false. Examples could include:
+10 > 5; //true
+array.includes(`Boolean?`) //false
 ```
 
 **_Array_**

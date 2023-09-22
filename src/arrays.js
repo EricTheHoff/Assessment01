@@ -6,7 +6,7 @@ function greaterThanTen(numbers) {
   let newNumbers = []
 
   for(const number of numbers) {
-    if(number > 20) {
+    if(number > 10) {
       newNumbers.push(number)
     }
   }
