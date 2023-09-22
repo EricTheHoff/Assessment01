@@ -18,16 +18,16 @@ function greaterThanTen(numbers) {
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
 function bWords(words) {
-  let bWords = []
+  let bWordsArray = []
 
   for(const onlyB of words) {
     if(onlyB.startsWith(`b`)) {
-      bWords.push(onlyB)
+      bWordsArray.push(onlyB)
     } else if(onlyB.startsWith(`B`)) {
-      bWords.push(onlyB)
+      bWordsArray.push(onlyB)
     }
   }
-  return bWords
+  return bWordsArray
 }
 
 // Add all the elements from additionalItems to the end of originalArray.
@@ -96,7 +96,18 @@ function findWordsStartingWith(words, letter) {
 // Ex.:
 //   smallestNItems([1, 30, 4, 21, 100000], 3);
 //   => [21, 4, 1]
-function smallestNItems(items, n) {}
+function smallestNItems(items, n) {
+  function compareNumb(a, b){
+  return a - b
+}
+  let smallArray = []
+
+  for(let i = 0; i < n; i++) {
+    items.sort(compareNumb)
+    smallArray.unshift(items[i])
+  }
+  return smallArray
+}
 
 // Search for a value in the array and return its index. If the value appears
 // more than once, return the index of the *FIRST* occurrence of the value. If
@@ -104,14 +115,25 @@ function smallestNItems(items, n) {}
 // Ex.:
 //   findIndex(['a', 'b', 'c', 'a', 'b', 'c'], 'c');
 //   => 2
-function findIndex(items, value) {}
+function findIndex(items, value) {
+  let indexVal = items.indexOf(value)
+  if(indexVal !== -1) {
+    return indexVal
+  } else return
+}
 
 // Given a start number and stop number, return a new array containing all the numbers
 // between the start and stop number.
 // Ex.:
 //   range(1, 5);
 //   => [1, 2, 3, 4, 5]
-function range(start, stop) {}
+function range(start, stop) {
+  let array = []
+  for(let i = start; i <= stop; i++){
+    array.push(i)
+  }
+  return array
+}
 
 export {
   bWords,
