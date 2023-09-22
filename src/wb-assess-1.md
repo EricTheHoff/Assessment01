@@ -14,7 +14,7 @@
 Which statement is true about JavaScript?
 
 - [ ] **A.** JavaScript is case insensitive, so `true` is the same as `True`.
-- [ ] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
+- [X] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
 - [ ] **C.** JavaScript requires you to end all statements with a semicolon (`;`).
 - [ ] **D.** All of the above are true.
 - [ ] **E.** None of the above are true.
@@ -32,7 +32,7 @@ answer.
 
 - [ ] **A.** `sum++`
 - [ ] **B.** `sum += 1`
-- [ ] **C.** `sum = sum + 1`
+- [X] **C.** `sum = sum + 1`
 - [ ] **D.** All of the above
 - [ ] **E.** Some of the above
 
@@ -45,7 +45,7 @@ const result = 1 < 100 || 'hello' === 'hi';
 console.log(result);
 ```
 
-- [ ] **A.** `true`
+- [X] **A.** `true`
 - [ ] **B.** `false`
 - [ ] **C.** `undefined`
 - [ ] **D.** N/A because the code has an error
